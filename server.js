@@ -20,7 +20,7 @@ app.use(middleware.logger);
 // }); // Takes two arguments. The first is the route. The second is the function. Req is what the user provides. Res is what you want to send back.
 
 app.get('/about', middleware.requireAuthentication, function(req, res) {
-	res.send('About Us');
+	res.send('About Us!');
 });
 
 app.use(express.static(__dirname + '/public')); // setting static server
